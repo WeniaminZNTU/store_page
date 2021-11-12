@@ -1,0 +1,21 @@
+.discount{
+  height:1.5rem;
+  width:3.2rem;
+
+  position:absolute;
+  margin-top:-2rem;
+  margin-left:0.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #EF3E33;
+  border-radius: 0 30% 0 30%;
+}
+
+.amount{
+  position:absolute;
+  margin-top:10.4rem;
+  margin-left:-8.25rem;
+}

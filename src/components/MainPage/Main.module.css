@@ -1,0 +1,12 @@
+.main_wrapper{
+  margin: 0 4.5rem;
+
+  border:1px solid black
+}
+
+.content{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+

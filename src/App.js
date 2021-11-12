@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+// import MainPage from './components/MainPage/index.jsx';
+import BasketPage from './components/BasketPage/index.jsx';
 
 function App() {
+  const [amountItems, setAmountItems] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+  
+  function addAmountAndPrice(AddAmount, AddPrice){
+    setAmountItems(totalAmount => totalAmount + AddAmount);
+    setTotalPrice(() => AddPrice);
+  }
+
+  function subAmountAndPrice(subAmount, subPrice){
+    setAmountItems(totalAmount => totalAmount - subAmount);
+    setTotalPrice(() => subPrice);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <MainPage addAmount={addAmountAndPrice} subAmount={subAmountAndPrice} amount={amountItems} price={totalPrice}/> */}
+      <BasketPage/>
+    </>
   );
 }
 

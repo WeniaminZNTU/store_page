@@ -1,0 +1,24 @@
+.wrapper{
+  height: 4.75rem;
+  display: flex;
+  /* flex-flow: row nowrap; */
+  justify-content: space-around;
+  align-items: center;
+
+  /* position:relative; */
+
+  background-color:#000C6C;
+  border-bottom: 1px solid black;
+}
+
+.list_wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  list-style: none;
+  list-style-type: none;
+}
+
